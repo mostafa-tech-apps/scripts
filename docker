@@ -1,8 +1,22 @@
 # Add Docker's official GPG key:
 sudo apt update
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+################################# Node ########################################
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc     # For Bash
+source ~/.zshrc      # For Zsh (if you're using Zsh)
+source ~/.profile    # If using other shell profiles
+
+nvm --version
+
+nvm install --lts
+nvm use --lts
+
+node --version
+npm --version
+
+################################### Docker ###########################################
 
 sudo apt install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
