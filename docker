@@ -16,6 +16,10 @@ nvm use --lts
 node --version
 npm --version
 
+################################# Deps ############################################
+
+cd frontend/ ; npm i ; cd ../backend ; npm i ; cd ..
+
 ################################### Docker ###########################################
 
 sudo apt install ca-certificates curl
